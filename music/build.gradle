@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 26
@@ -34,4 +35,8 @@ dependencies {
     implementation files('src/main/java/ai/inlight/libs/gson-2.8.1.jar')
     implementation files('src/main/java/ai/inlight/libs/okhttp-2.7.5.jar')
     implementation files('src/main/java/ai/inlight/libs/okio-1.13.0.jar')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }
