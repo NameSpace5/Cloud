@@ -34,7 +34,7 @@ class MusicApi {
         return Gson().fromJson(json,song.javaObjectType)
     }
     /**
-     * 手机登陆，封装加密的方式
+     * 手机登陆，封装加密方式
      * @Param phone
      * @Param password
      */

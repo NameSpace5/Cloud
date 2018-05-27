@@ -31,11 +31,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation files('src/main/java/ai/inlight/libs/commons-codec-1.10.jar')
     implementation files('src/main/java/ai/inlight/libs/gson-2.8.1.jar')
     implementation files('src/main/java/ai/inlight/libs/okhttp-2.7.5.jar')
     implementation files('src/main/java/ai/inlight/libs/okio-1.13.0.jar')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 repositories {
     mavenCentral()
