@@ -2,18 +2,15 @@ package ai.inlight.model.bean;
 
 import java.util.List;
 
-import model.bean.BeReplied;
-import model.bean.User;
-
 public class HotComment {
-    private List<model.bean.BeReplied> beReplied;
-    private model.bean.User user;
+    private List<BeReplied> beReplied;
+    private User user;
     private Boolean liked;
     private Long likedCount;
     private Long time;
     private String content;
 
-    public List<model.bean.BeReplied> getBeReplied() {
+    public List<BeReplied> getBeReplied() {
         return beReplied;
     }
 
@@ -21,7 +18,7 @@ public class HotComment {
         this.beReplied = beReplied;
     }
 
-    public model.bean.User getUser() {
+    public User getUser() {
         return user;
     }
 

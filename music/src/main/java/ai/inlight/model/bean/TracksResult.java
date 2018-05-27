@@ -2,12 +2,9 @@ package ai.inlight.model.bean;
 
 import java.util.List;
 
-import model.bean.Creator;
-import model.bean.Track;
-
 public class TracksResult {
-    private model.bean.Creator creator;
-    private List<model.bean.Track> tracks;
+    private Creator creator;
+    private List<Track> tracks;
     private Long trackNumberUpdateTime;
     private Boolean ordered;
     private List<String> tags;
@@ -23,7 +20,7 @@ public class TracksResult {
     private int shareCount;
     private int commentCount;
 
-    public model.bean.Creator getCreator() {
+    public Creator getCreator() {
         return creator;
     }
 
@@ -31,7 +28,7 @@ public class TracksResult {
         this.creator = creator;
     }
 
-    public List<model.bean.Track> getTracks() {
+    public List<Track> getTracks() {
         return tracks;
     }
 

@@ -2,13 +2,11 @@ package ai.inlight.model.bean;
 
 import java.util.List;
 
-import model.bean.Profile;
-
 public class UserProfileResult {
-    private List<model.bean.Profile> userProfile;
+    private List<Profile> userProfile;
     private int userProfileCount;
 
-    public List<model.bean.Profile> getUserProfile() {
+    public List<Profile> getUserProfile() {
         return userProfile;
     }
 

@@ -2,13 +2,11 @@ package ai.inlight.model.bean;
 
 import java.util.List;
 
-import model.bean.Artist;
-
 public class ArtistsResult {
-    private List<model.bean.Artist> artists;
+    private List<Artist> artists;
     private int artistCount;
 
-    public List<model.bean.Artist> getArtists() {
+    public List<Artist> getArtists() {
         return artists;
     }
 

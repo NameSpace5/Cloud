@@ -2,13 +2,12 @@ package ai.inlight.model.bean;
 
 import java.util.List;
 
-import model.bean.Album;
 
 public class AlbumResult {
-    private List<model.bean.Album> albums;
+    private List<Album> albums;
     private int albumCount;
 
-    public List<model.bean.Album> getAlbums() {
+    public List<Album> getAlbums() {
         return albums;
     }
 

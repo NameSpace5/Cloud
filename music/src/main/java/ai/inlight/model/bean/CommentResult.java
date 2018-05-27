@@ -2,12 +2,10 @@ package ai.inlight.model.bean;
 
 import java.util.List;
 
-import model.bean.Comment;
-
 public class CommentResult {
     private Boolean isMusician;
     private Boolean moreHot;
-    private List<model.bean.Comment> comments;
+    private List<Comment> comments;
     private Long total;
     private Boolean more;
     private int code;
@@ -28,7 +26,7 @@ public class CommentResult {
         this.moreHot = moreHot;
     }
 
-    public List<model.bean.Comment> getComments() {
+    public List<Comment> getComments() {
         return comments;
     }
 

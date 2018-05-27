@@ -1,13 +1,11 @@
 package ai.inlight.model.bean;
 
-import model.bean.User;
-
 public class BeReplied {
-    private model.bean.User user;
+    private User user;
     private String content;
     private int status;
 
-    public model.bean.User getUser() {
+    public User getUser() {
         return user;
     }
 

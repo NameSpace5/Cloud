@@ -2,19 +2,16 @@ package ai.inlight.model.bean;
 
 import java.util.List;
 
-import model.bean.Comment;
-import model.bean.HotComment;
-
 public class HotCommentResult {
-    private List<model.bean.HotComment> hotComments;
+    private List<HotComment> hotComments;
     private Boolean isMusician;
     private  Boolean moreHot;
-    private List<model.bean.Comment> comments;
+    private List<Comment> comments;
     private Long total;
     private Boolean more;
     private int code;
 
-    public List<model.bean.HotComment> getHotComments() {
+    public List<HotComment> getHotComments() {
         return hotComments;
     }
 
@@ -38,7 +35,7 @@ public class HotCommentResult {
         this.moreHot = moreHot;
     }
 
-    public List<model.bean.Comment> getComments() {
+    public List<Comment> getComments() {
         return comments;
     }
 

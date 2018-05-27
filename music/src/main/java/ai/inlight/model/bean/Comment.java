@@ -2,8 +2,6 @@ package ai.inlight.model.bean;
 
 import java.util.List;
 
-import model.bean.BeReplied;
-
 public class Comment {
     private List<BeReplied> beReplied;
     private Boolean liked;

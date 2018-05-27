@@ -2,13 +2,12 @@ package ai.inlight.model.bean;
 
 import java.util.List;
 
-import model.bean.Song;
 
 public class SongsResult {
-    private List<model.bean.Song> songs;
+    private List<Song> songs;
     private int songCount;
 
-    public List<model.bean.Song> getSongs() {
+    public List<Song> getSongs() {
         return songs;
     }
 

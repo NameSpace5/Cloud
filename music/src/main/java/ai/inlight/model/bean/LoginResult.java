@@ -2,16 +2,12 @@ package ai.inlight.model.bean;
 
 import java.util.List;
 
-import model.bean.Account;
-import model.bean.Binding;
-import model.bean.Profile;
-
 public class LoginResult {
     private int loginType;
     private int code;
-    private model.bean.Account account;
-    private model.bean.Profile profile;
-    private List<model.bean.Binding> bindings;
+    private Account account;
+    private Profile profile;
+    private List<Binding> bindings;
 
     public int getLoginType() {
         return loginType;
@@ -29,7 +25,7 @@ public class LoginResult {
         this.code = code;
     }
 
-    public model.bean.Account getAccount() {
+    public Account getAccount() {
         return account;
     }
 
@@ -37,7 +33,7 @@ public class LoginResult {
         this.account = account;
     }
 
-    public model.bean.Profile getProfile() {
+    public Profile getProfile() {
         return profile;
     }
 
@@ -45,7 +41,7 @@ public class LoginResult {
         this.profile = profile;
     }
 
-    public List<model.bean.Binding> getBindings() {
+    public List<Binding> getBindings() {
         return bindings;
     }
 

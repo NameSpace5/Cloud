@@ -2,8 +2,6 @@ package ai.inlight.model.bean;
 
 import java.util.List;
 
-import model.bean.Artist;
-
 public class Album {
     private Long id;
     private String name;

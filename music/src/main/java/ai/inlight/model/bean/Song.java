@@ -2,9 +2,6 @@ package ai.inlight.model.bean;
 
 import java.util.List;
 
-import model.bean.Album;
-import model.bean.Artist;
-
 public class Song {
     private Long id;
     private String name;
