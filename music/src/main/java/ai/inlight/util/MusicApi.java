@@ -1,11 +1,14 @@
 package ai.inlight.util;
 
-import model.bean.*;
-import util.OkHttpManager;
-
 import java.io.IOException;
 import java.util.HashMap;
 import com.google.gson.*;
+
+import ai.inlight.model.bean.CommentResult;
+import ai.inlight.model.bean.HotCommentResult;
+import ai.inlight.model.bean.LoginResult;
+import ai.inlight.model.bean.SongsResult;
+import ai.inlight.model.bean.TracksResult;
 
 public class MusicApi {
 
@@ -44,7 +47,7 @@ public class MusicApi {
      * @Param phone
      * @Param password
      */
-   public LoginResult loginPhone(String phone,String password) throws IOException {
+   public LoginResult loginPhone(String phone, String password) throws IOException {
         HashMap map = encryptUtils.encrypted_request(0,phone,password);
         String result = client.requestPostSyn(BASE_URL_163, ACTION_URL_LOGIN_CELLPHONE,map);
 
@@ -76,7 +79,7 @@ public class MusicApi {
      * @param page 页数
      * @param count 获取评论数量
      */
-    public CommentResult comments(String musicId, int page,int count) throws IOException {
+    public CommentResult comments(String musicId, int page, int count) throws IOException {
         String action_url = ACTION_URL_COMMENTS + musicId;
         HashMap<String,String> map = encryptUtils.encrypted_comments(musicId,page,count);
         String result = client.requestPostSyn(BASE_URL_163, action_url,map);
